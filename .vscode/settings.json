@@ -1,0 +1,15 @@
+{
+    "files.associations": {
+        "*.c": "c",
+        "*.h": "c"
+    },
+    "C_Cpp.intelliSenseEngine": "disabled",
+    "clangd.arguments": [
+        "--background-index",
+        "--clang-tidy",
+        "--compile-commands-dir=${workspaceFolder}",
+        "--completion-style=detailed",
+        "--header-insertion=never"
+    ],
+    "editor.formatOnSave": true
+}
