@@ -5,11 +5,16 @@
 #define TARGET_DISTANCE_CM 50.0f
 #define ENCODER_PER_CM 50.0f
 #define TARGET_ENCODER_COUNT ((int)(TARGET_DISTANCE_CM * ENCODER_PER_CM))
+//这里的常数也是要依赖场地的,缺乏终点验证机制,即距离测量方式
 
 // 打印间隔时间（毫秒）
 #define PRINT_INTERVAL_MS 100
 
 // 全局变量声明
+// M1==左前轮
+// M2==左后轮
+// M3==右前轮
+// M4==右后轮
 int16_t speed;
 int Encoder_M3 = 0;
 int Encoder_M2 = 0;
